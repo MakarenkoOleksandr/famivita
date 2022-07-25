@@ -1,0 +1,23 @@
+@use "../../../presets" as *;
+
+.home-header {
+    min-height: 100vh;
+    &__discount {
+        background-color: $Foundation-Primary-A;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &-descripton {
+            font-weight: 600;
+            font-size: 14px;
+            color: $color-white;
+        }
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-areas: "discount discount discount";
+    }
+    &__navbar {
+    }
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,51 @@
   <title>Document</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-  <h1>Header</h1>
-  <script src="./assets/js/main.js"></script>
+
+  <header class="home-header">
+    <div class="home-header__discount">
+      <strong class="home-header__discount-descripton">- 50% 🌺 dicount is activated</strong>
+    </div>
+    <div class="home-header__wrapper">
+      <div class="home-header__navbar navbar">
+
+        <div class="navbar__logo">
+          <a class="navbar__logo-link" href="">
+            <img class="navbar__logo-image" src="assets/img/home/header/navbar-logo.svg" alt="">
+          </a>
+        </div>
+
+        <nav class="navbar__menu menu">
+          <div class="menu__hamburger">
+            <span class="menu__hamburger-row"></span>
+            <span class="menu__hamburger-row"></span>
+            <span class="menu__hamburger-row"></span>
+
+            <ul class="menu__list">
+              <li class="menu__list-item active"><a href="">Engravidar</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="">Gravidez</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="">Ciclo</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="">Consulta de especialista</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="">Sobre Famivita</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="">Aprender</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="navbar__actions actions">
+          <button class="actions__registration" type="button">Account</button>
+          <button class="actions__basket" type="button">
+            <img class="actions__basket-image" src="assets/img/home/header/navbar-basket.svg" alt="basket">
+          </button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>

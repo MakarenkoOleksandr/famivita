@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Work Sans";
-  src: url("../../WorkSans-Italic.woff2") format("woff2"), url("WorkSans-Italic.woff") format("woff");
+  src: url("../WorkSans-Regular.woff2") format("woff2"), url("../WorkSans-Regular.woff") format("woff");
   font-weight: normal;
-  font-style: italic;
+  font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Work Sans";
-  src: url("../../WorkSans-Regular.woff2") format("woff2"), url("WorkSans-Regular.woff") format("woff");
-  font-weight: normal;
+  src: url("../WorkSans-SemiBold.woff2") format("woff2"), url("../WorkSans-SemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -19,4 +19,48 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ul */
+/* xl */
+/* lg */
+/* md */
+/* sm */
+/* xs */
+.home-header {
+  min-height: 100vh;
+}
+.home-header__discount {
+  background-color: #2b6b5c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.home-header__discount-descripton {
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+}
+.home-header__wrapper {
+  display: grid;
+  grid-template-areas: "discount discount discount";
 }
