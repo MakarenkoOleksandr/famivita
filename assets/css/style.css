@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Work Sans";
+  src: url("../../WorkSans-Italic.woff2") format("woff2"), url("WorkSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../../WorkSans-Regular.woff2") format("woff2"), url("WorkSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
