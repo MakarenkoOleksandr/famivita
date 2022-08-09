@@ -1,5 +1,19 @@
+@use "../../../presets" as *;
+@use "../../../mixins";
+
 .navbar {
+    box-shadow: 0px 0px 2px 3px rgba(76, 76, 76, 0.1);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: $gap;
+    padding-right: $gap;
+    display: grid;
+    grid-template-areas: "logo menu actions";
+    align-items: center;
+    justify-content: space-around;
+
     &__logo {
+        grid-area: logo;
         &-link {
         }
         &-image {

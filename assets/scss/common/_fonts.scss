@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Work Sans";
-    src: url("../WorkSans-Regular.woff2") format("woff2"), url("../WorkSans-Regular.woff") format("woff");
+    src: url("../fonts/WorkSans-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,15 @@
 
 @font-face {
     font-family: "Work Sans";
-    src: url("../WorkSans-SemiBold.woff2") format("woff2"), url("../WorkSans-SemiBold.woff") format("woff");
+    src: url("../fonts/WorkSans-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url("../fonts/WorkSans-SemiBold.woff2") format("woff2");
     font-weight: 600;
     font-style: normal;
     font-display: swap;

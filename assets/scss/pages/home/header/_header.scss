@@ -2,6 +2,7 @@
 
 .home-header {
     min-height: 100vh;
+    position: relative;
     &__discount {
         background-color: $Foundation-Primary-A;
         display: flex;
@@ -13,11 +14,5 @@
             font-size: 14px;
             color: $color-white;
         }
-    }
-    &__wrapper {
-        display: grid;
-        grid-template-areas: "discount discount discount";
-    }
-    &__navbar {
     }
 }

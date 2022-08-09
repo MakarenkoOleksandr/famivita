@@ -1,13 +1,20 @@
 @font-face {
   font-family: "Work Sans";
-  src: url("../WorkSans-Regular.woff2") format("woff2"), url("../WorkSans-Regular.woff") format("woff");
+  src: url("../fonts/WorkSans-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Work Sans";
-  src: url("../WorkSans-SemiBold.woff2") format("woff2"), url("../WorkSans-SemiBold.woff") format("woff");
+  src: url("../fonts/WorkSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/WorkSans-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -24,7 +31,7 @@
 html {
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 ul {
@@ -35,6 +42,21 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* ul */
 /* xl */
 /* lg */
@@ -43,6 +65,7 @@ a {
 /* xs */
 .home-header {
   min-height: 100vh;
+  position: relative;
 }
 .home-header__discount {
   background-color: #2b6b5c;
@@ -60,7 +83,74 @@ a {
   font-size: 14px;
   color: #ffffff;
 }
-.home-header__wrapper {
+
+.menu {
+  grid-area: menu;
+}
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 55px;
+     -moz-column-gap: 55px;
+          column-gap: 55px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu__list-item-active {
+  background-color: #e6f4f1;
+  padding: 0.5em 1em;
+  border-radius: 36px;
+}
+.menu__list-item-active > a {
+  color: #3b5a68;
+  font-weight: 500;
+}
+.menu__list-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #1e3844;
+}
+.menu__list-link:hover {
+  color: #3b5a68;
+}
+
+.actions {
+  grid-area: actions;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+.actions__registration {
+  font-weight: 600;
+  font-size: 14px;
+  color: #262627;
+  background-color: #ffe8e3;
+  border-radius: 36px;
+  height: 35px;
+  width: 80px;
+  padding: 0.5em 1em;
+}
+.navbar {
+  -webkit-box-shadow: 0px 0px 2px 3px rgba(76, 76, 76, 0.1);
+          box-shadow: 0px 0px 2px 3px rgba(76, 76, 76, 0.1);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: grid;
-  grid-template-areas: "discount discount discount";
+  grid-template-areas: "logo menu actions";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.navbar__logo {
+  grid-area: logo;
 }

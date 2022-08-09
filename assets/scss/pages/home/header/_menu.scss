@@ -1,17 +1,35 @@
-@use "../../../presets";
+@use "../../../presets" as *;
 @use "../../../mixins";
 
-.navbar__menu {
-}
 .menu {
-}
-.menu__hamburger {
-}
-.menu__hamburger-row {
+    grid-area: menu;
+    &__hamburger {
+        &-row {
+        }
+    }
 }
 .menu__list {
-}
-.menu__list-item {
-}
-.active {
+    display: flex;
+    column-gap: 55px;
+    align-items: center;
+    &-item {
+        &-active {
+            background-color: $green-cold-20;
+            padding: 0.5em 1em;
+            border-radius: 36px;
+        }
+        &-active > a {
+            color: $Hover-Light-Primary-B;
+            font-weight: 500;
+        }
+    }
+    &-link {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.71;
+        color: $Foundation-Primary-B;
+    }
+    &-link:hover {
+        color: $Hover-Light-Primary-B;
+    }
 }

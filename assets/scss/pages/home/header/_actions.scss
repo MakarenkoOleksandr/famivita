@@ -1,0 +1,22 @@
+@use "../../../presets" as *;
+@use "../../../mixins";
+
+.actions {
+    grid-area: actions;
+    display: flex;
+    column-gap: 30px;
+    &__registration {
+        font-weight: 600;
+        font-size: 14px;
+        color: $gray-100;
+        background-color: $carrot-red-20;
+        border-radius: 36px;
+        height: 35px;
+        width: 80px;
+        padding: 0.5em 1em;
+    }
+    &__basket {
+        &-image {
+        }
+    }
+}
